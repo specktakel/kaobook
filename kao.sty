@@ -1141,7 +1141,7 @@
 \newcommand{\kao@fontmethodModern}{%
 	\RequirePackage{amssymb} % Must be loaded before unicode-math
 	\RequirePackage[force]{filehook} % Fixes an error
-	\RequirePackage{unicode-math} % Math fonts in xetexorluatex
+	%\RequirePackage{unicode-math} % Math fonts in xetexorluatex
 	\setromanfont[ % Libertinus Serif font
 		Scale=1.04
 	]{Libertinus Serif}
@@ -1162,10 +1162,12 @@
 	\RequirePackage[T1]{fontenc} % utf8 encoding in the output (.pdf) file
 
 	\RequirePackage{amssymb} % Math symbols, including \blacktriangleright, used for bullets
-	\RequirePackage[scaled=.97,helvratio=.93,p,theoremfont]{newpxtext} % Serif palatino font
-	\RequirePackage[vvarbb,smallerops,bigdelims]{newpxmath} % Math palatino font
-	\RequirePackage[scaled=.85]{beramono} % Monospace font
-	\RequirePackage[scr=rsfso,cal=boondoxo]{mathalfa} % Mathcal from STIX, unslanted a bit
+	\RequirePackage{amsmath}
+    %\RequirePackage[scaled=.97,helvratio=.93,p,theoremfont]{newpxtext} % Serif palatino font
+	\RequirePackage[]{lmodern} % Computer Modern
+    %\RequirePackage[vvarbb,smallerops,bigdelims]{newpxmath} % Math palatino font
+	%\RequirePackage[scaled=.85]{beramono} % Monospace font
+	%\RequirePackage[scr=rsfso,cal=boondoxo]{mathalfa} % Mathcal from STIX, unslanted a bit
 	\RequirePackage{morewrites} % Fix some errors related to floats
 }
 
