@@ -45,6 +45,8 @@
 \newcommand{\remarkname}{}
 \newcommand{\examplename}{}
 \newcommand{\exercisename}{}
+\newcommand{\appname}{}
+\newcommand{\appnameshort}{}
 
 \addto\captionsgerman{%
 	\renewcommand{\chapternameshort}{Kap.}
@@ -65,6 +67,7 @@
 	\renewcommand{\remarkname}{Bemerkung}
 	\renewcommand{\examplename}{Beispiel}
 	\renewcommand{\exercisename}{Übung}
+	\renewcommand{\appname}{Anhang}
 }
 \addto\captionsdanish{%
 	\renewcommand{\chapternameshort}{Kap.}
@@ -105,6 +108,8 @@
 	\renewcommand{\remarkname}{Remark}
 	\renewcommand{\examplename}{Example}
 	\renewcommand{\exercisename}{Exercise}
+	\renewcommand{\appname}{Appendix}
+	\renewcommand{\appnameshort}{App.}
 }
 \addto\captionsitalian{%
 	\renewcommand{\chapternameshort}{Cap.}
@@ -169,6 +174,7 @@
 \newcommand{\labremark}[1]{\label{remark:#1}}
 \newcommand{\labexample}[1]{\label{example:#1}}
 \newcommand{\labexercise}[1]{\label{exercise:#1}}
+\newcommand{\labapp}[1]{\label{app:#1}}
 
 
 %----------------------------------------------------------------------------------------
@@ -195,6 +201,9 @@
 \newcommand{\nrefch}[1]{\hyperref[ch:#1]{\chaptername\xspace\ref{ch:#1} (\nameref{ch:#1})}}
 \newcommand{\frefch}[1]{\hyperref[ch:#1]{\chaptername\xspace\ref{ch:#1} (\nameref{ch:#1}) \vpageref{ch:#1}}}
 
+\newcommand{\refapp}[1]{\hyperref[app:#1]{\appname\xspace\ref{app:#1}}}
+\newcommand{\refappshort}[1]{\hyperref[app:#1]{\appnameshort\xspace\ref{app:#1}}}
+
 %\newcommand{\refsec}[1]{Section~{\usekomafont{section}\normalsize\nameref{sec:#1}}\xspace\vpageref{sec:#1}\,}
 \newcommand{\refsecshort}[1]{\hyperref[sec:#1]{\sectionnameshort\xspace\ref{sec:#1}}}
 \newcommand{\refsec}[1]{\hyperref[sec:#1]{\sectionname\xspace\ref{sec:#1}}}
@@ -209,15 +218,15 @@
 \newcommand{\frefsubsec}[1]{\hyperref[subsec:#1]{\subsectionname\xspace\ref{subsec:#1} (\nameref{subsec:#1}) \vpageref{subsec:#1}}}
 
 %\newcommand{\reffig}[1]{{\hypersetup{colorlinks=false}\usekomafont{captionlabel}\hyperref[fig:#1]{Figure}\xspace\ref{fig:#1}}}
-\newcommand{\reffigshort}[1]{\hyperref[fig:#1]{\figurenameshort\xspace\ref{fig:#1}}}
-\newcommand{\reffig}[1]{\hyperref[fig:#1]{\figurename}\xspace\ref{fig:#1}}
+\newcommand{\reffigshort}[1]{\hyperref[fig:#1]{\figurenameshort~\ref{fig:#1}}}
+\newcommand{\reffig}[1]{\hyperref[fig:#1]{\figurename}~\ref{fig:#1}}
 \newcommand{\vreffig}[1]{\hyperref[fig:#1]{\figurename\xspace\vref{fig:#1}}}
 
 %\newcommand{\reftab}[1]{{\hypersetup{colorlinks=false}\usekomafont{captionlabel}\hyperref[tab:#1]{Table}\xspace\ref{tab:#1}}}
-\newcommand{\reftab}[1]{\hyperref[tab:#1]{\tablename}\xspace\ref{tab:#1}}
+\newcommand{\reftab}[1]{\hyperref[tab:#1]{\tablename}~\ref{tab:#1}}
 \newcommand{\vreftab}[1]{\hyperref[tab:#1]{\tablename\xspace\vref{tab:#1}}}
 
-\renewcommand{\refeq}[1]{\hyperref[eq:#1]\eqnameshort\xspace(\ref{eq:#1})}
+\renewcommand{\refeq}[1]{\hyperref[eq:#1]\eqnameshort~(\ref{eq:#1})}
 %\providecommand\refeq{}
 \newcommand{\refeqlong}[1]{\hyperref[eq:#1]\eqname\xspace\ref{eq:#1}}
 \newcommand{\vrefeq}[1]{\hyperref[eq:#1]\eqname\xspace\vref{eq:#1}}

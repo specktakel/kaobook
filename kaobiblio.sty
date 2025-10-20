@@ -144,6 +144,23 @@
 %----------------------------------------------------------------------------------------
 %	CITATION COMMANDS
 %----------------------------------------------------------------------------------------
+\NewDocumentCommand{\citet}{m}{%
+	\citeauthor{#1} (\citefield{#1}{year})%
+}
+
+\NewDocumentCommand{\margincite}{o m}{%
+	\marginnote[#1]{\citeinmargin{#2}}%
+}
+
+\NewDocumentCommand{\citeinmargin}{m}{%
+	\citeauthor*{#1} (\citefield{#1}{year}), \citefield{#1}[emph]{title} \parencite{#1}%
+}
+
+\NewDocumentCommand{\citepinmargin}{m}{%
+	(\citeauthor*{#1} \citefield{#1}{year}, \citefield{#1}[emph]{title} \parencite{#1})%
+}
+
+
 
 % Command to format the marginnote created for cited items
 \NewDocumentCommand{\formatmargincitation}{m}{% The parameter is a single citation key
