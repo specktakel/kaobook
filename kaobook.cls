@@ -180,12 +180,12 @@
 
     % Logos
     % FAK logo
-    \input{fak_placement.tex}
+    %\input{fak_placement.tex}
 
     % FAK text
     %                         See TUM CD Handbook page 16
     %                         x    + x    + 0.5x
-    \begin{textblock*}{120mm}(10mm + 10mm + 5mm + \@titlepagebindingcor, 13.78mm)
+    \begin{textblock*}{120mm}(10mm + \@titlepagebindingcor, 13.78mm)
         \footnotesize
         \fontfamily{phv}\selectfont
         \noindent \textcolor{TUMBlue}{
