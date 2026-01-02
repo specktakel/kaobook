@@ -246,7 +246,7 @@
         \centering
         \raggedright
 
-        \textbf{Vorsitzender:}\\
+        \textbf{Vorsitz:}\\
         \hspace{8mm}\hphantom{1. }\@vorsitz
 
         \vspace{2mm}
@@ -272,9 +272,9 @@
     \begin{textblock*}{\defaultwidth}(\defaulthpos, \datevpos)
         \raggedright
 
-        Die Dissertation wurde am .. . .. . .... bei der Technischen Universit\"at
+        Die Dissertation wurde am 29.10.2025 bei der Technischen Universit\"at
         M\"unchen eingereicht und durch die {\@faculty}
-        am .. . .. . ....
+        am 10.12.2025
         angenommen.
 
     \end{textblock*}
